@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="웹 UI와 프론트엔드 구현 경험을 담은 이영란의 포트폴리오입니다." />
+    <meta name="theme-color" content="#101010" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101010'/%3E%3Cpath d='M18 16h8v25h20v7H18z' fill='%233156ff'/%3E%3Cpath d='M38 16h8v19h-8z' fill='%23f7f7f5'/%3E%3C/svg%3E" />
+    <title>이영란 — Web Publisher / Front-End</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="이영란 포트폴리오 첫 화면">LYR<span>.</span></a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span>Menu</span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" hidden>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-kicker"><span></span> Portfolio / 2026</div>
+        <div class="hero-layout">
+          <div>
+            <p class="eyebrow">Web Publisher / Front-End</p>
+            <h1 id="hero-title">이영란</h1>
+          </div>
+          <div class="hero-copy">
+            <p class="hero-statement">웹 퍼블리싱부터<br />UI 기능 구현까지</p>
+            <dl class="hero-facts">
+              <div><dt>Experience</dt><dd>5년 8개월</dd></div>
+              <div><dt>Projects</dt><dd>20건</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="hero-footer">
+          <p>HTML · CSS · JavaScript · jQuery · JSP · AJAX · Fetch · JSON</p>
+          <a href="#projects">Selected work <span aria-hidden="true">↘</span></a>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-no">01 / Selected projects</p>
+          <h2 id="projects-title">대표 프로젝트</h2>
+          <p class="section-intro">프로젝트명을 누르면 화면 구현, 담당 역할, 사용 기술을 한 화면에서 확인할 수 있습니다.</p>
+        </div>
+        <div class="project-grid" data-project-grid aria-live="polite"></div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading split-heading">
+          <p class="section-no">02 / Skills</p>
+          <h2 id="skills-title">화면을 설계 의도대로,<br />동작은 사용자 흐름대로.</h2>
+        </div>
+        <div class="skill-layout">
+          <div class="skill-manifesto">
+            <p>마크업부터 동적 UI 구현, 데이터 연동까지 다양한 웹 화면을 구현해왔습니다.</p>
+          </div>
+          <div class="skill-groups">
+            <article>
+              <span>01</span>
+              <h3>UI Development</h3>
+              <p>HTML5 · CSS3 · Responsive UI</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Interaction</h3>
+              <p>JavaScript · jQuery · DOM · Event Handling</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Data</h3>
+              <p>JSP · AJAX · Fetch · JSON</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Components</h3>
+              <p>Search · Filter · Modal · Tab · Slider</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section career-section" id="career" aria-labelledby="career-title">
+        <div class="section-heading career-heading">
+          <div>
+            <p class="section-no">03 / All projects</p>
+            <h2 id="career-title">프로젝트로 보는<br />5년 8개월의 흐름</h2>
+          </div>
+          <div class="career-filter" aria-label="경력 단계별 프로젝트 필터" data-career-filter></div>
+        </div>
+        <div class="career-list" data-career-list></div>
+        <p class="career-note">경력 단계 탭을 선택해 20개 프로젝트를 구간별로 확인할 수 있습니다.</p>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="section-no">04 / Contact</p>
+        <div class="contact-layout">
+          <h2 id="contact-title">다양한 프로젝트 경험을 바탕으로<br />완성도 높은 웹 화면을 구현합니다.</h2>
+          <div class="contact-copy">
+            <!-- <p>웹 UI 구현과 프론트엔드 협업 경험에 대해 더 자세히 이야기하고 싶습니다.</p> -->
+            <address class="contact-links">
+              <div class="contact-person"><span>Name</span><strong>이영란</strong></div>
+              <a href="mailto:dldudfks0818@naver.com"><span>Email</span><strong>dldudfks0818@naver.com</strong></a>
+              <a href="tel:+821077446312"><span>Mobile</span><strong>010 7744 6312</strong></a>
+            </address>
+          </div>
+        </div>
+        <footer>
+          <p>© <span data-year-now></span> Lee Youngran</p>
+          <a href="#top">Back to top ↑</a>
+        </footer>
+      </section>
+    </main>
+
+    <dialog class="project-dialog" data-project-dialog aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="프로젝트 상세 닫기">Close ×</button>
+      <div data-dialog-content></div>
+    </dialog>
+  </body>
+</html>
